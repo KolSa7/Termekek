@@ -15,7 +15,11 @@
 
             <Label Content="Termékek:"/>
             <ListBox x:Name="lbox_termekek" Margin="0,0,0,10" SourceUpdated="lbox_termekek_SourceUpdated" />
-
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Button x:Name="btn_torles" Content="Törlés" Margin="10,10,10,10" Click="btn_torles_Click" />
+                <Button x:Name="btn_torlesAll" Content="Összes törlése" Margin="10,10,10,10" Click="btn_torlesAll_Click" />
+                <TextBlock x:Name="tb_sum" Text="Termékek száma: 0" Margin="10,10,10,10"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>
